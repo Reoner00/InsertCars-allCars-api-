@@ -1,0 +1,126 @@
+/* need srift */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  padding: 1.5rem 4rem;
+  background-color: #f8f9fa;
+}
+header nav ul {
+  justify-content: right;
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+header nav ul li {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+main h1 {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.cars-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem 4rem;
+}
+
+.card {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease;
+  font-size: 1.2rem;
+  img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+}
+
+.card-content {
+  width: 750px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+.cars-form {
+  width: 100%;
+  display: grid;
+  margin: 0 auto;
+  width: 50%;
+  gap: 1rem;
+  input {
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    &:focus {
+      outline: none;
+      border: 1px solid #0b18cf;
+    }
+  }
+}
+
+#message {
+  font-size: 1.5rem;
+}
+.btns-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+#btnSubmit {
+  width: 400px;
+  padding: 0.5rem 1rem;
+  background-color: #464646e1;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+#inputDelId {
+  width: 100px;
+  margin: 0 auto;
+  text-align: left;
+  gap: 1rem;
+  border: 3px solid #fc7373;
+
+  &:focus {
+    outline: none;
+    border: 2px solid #0b18cf;
+  }
+}
+
+#delCarId {
+  width: 400px;
+  padding: 0.5rem 1rem;
+  background-color: #464646e1;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+}

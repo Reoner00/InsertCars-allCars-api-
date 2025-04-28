@@ -1,0 +1,59 @@
+/* need srift */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  padding: 1.5rem 4rem;
+  background-color: #f8f9fa;
+}
+header nav ul {
+  justify-content: right;
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+header nav ul li {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+main h1 {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.cars-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem 4rem;
+}
+
+.card {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease;
+  font-size: 1.2rem;
+  img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+}
+
+.card-content {
+  width: 750px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+}
