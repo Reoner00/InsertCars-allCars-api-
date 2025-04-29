@@ -21,9 +21,13 @@
       <div class="cars-form">
         <h1>Insert Car</h1>
         <input id="title" type="text" placeholder="title" />
-        <input id="description" type="text" placeholder="description" />
         <input id="imgUrl" type="text" placeholder="imgUrl" />
         <input id="price" type="text" placeholder="price" />
+        <textarea
+          id="description"
+          placeholder="description"
+          type="text"
+        ></textarea>
         <div class="btns-form">
           <button id="btnSubmit">Submit</button>
           <div class="btns-form-del">
@@ -31,9 +35,9 @@
             <button id="delCarId">delCarID</button>
           </div>
         </div>
-        <span id="message"></span>
+        <div id="message"></div>
       </div>
     </main>
-    <script src="./script.js"></script>
+    <script src="./script.js" type="module"></script>
   </body>
 </html>
