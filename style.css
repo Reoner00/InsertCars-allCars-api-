@@ -1,9 +1,13 @@
-/* need srift */
+@font-face {
+  font-family: "Monsterrat";
+  src: url("./fonts/Montserrat-VariableFont_wght.ttf");
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Monsterrat;
 }
 header {
   padding: 1.5rem 4rem;
