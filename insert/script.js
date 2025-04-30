@@ -1,4 +1,5 @@
 import { insertCar, deleteCarById } from "../utils/fetch.js";
+import { validateInsert } from "../utils/validation.js";
 
 const title = document.getElementById("title");
 const imgUrl = document.getElementById("imgUrl");
@@ -10,29 +11,16 @@ const btnDelId = document.getElementById("delCarId");
 const message = document.getElementById("message");
 
 btnSubmit.addEventListener("click", async () => {
+  message.textContent = "";
   const data = {
     title: title.value,
     description: description.value,
     imgUrl: imgUrl.value,
     price: +price.value,
   };
-  if (isNaN(data.price)) {
-    console.error("Price must be a number.");
-    message.textContent = "Price must be a number.";
-    message.style.color = "red";
-    return;
-  }
-  if (!title.value || !description.value || !imgUrl.value || !price.value) {
-    console.error("Fill all fields before submitting.");
-    message.textContent = "Fill all fields before submitting.";
-    message.style.color = "red";
-    return;
-  }
-  const imageUrlRegex =
-    /^https?:\/\/.*\.(jpg|jpeg|png|gif|bmp|webp|svg)(\?.*)?$/i;
-
-  if (!imageUrlRegex.test(data.imgUrl)) {
-    console.log("mage URL is bad");
+  const isValidationError = validateInsert(data);
+  if (isValidationError) {
+    console.error("Validation error:");
     return;
   }
 

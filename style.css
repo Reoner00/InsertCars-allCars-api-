@@ -57,7 +57,7 @@ main h1 {
   gap: 1.2rem;
   cursor: pointer;
   img {
-    width: 600px;
+    width: 800px;
     height: 300px;
     object-fit: cover;
     border-radius: 8px;
