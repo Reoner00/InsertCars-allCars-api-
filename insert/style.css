@@ -65,12 +65,13 @@ main h1 {
 .btns-form {
   width: 100%;
   display: flex;
-  justify-content: center;
   justify-content: space-between;
+  align-items: center;
+  text-align: center;
 }
 
 #btnSubmit {
-  width: 400px;
+  width: 40%;
   padding: 0.5rem 1rem;
   background-color: #464646e1;
   color: rgb(255, 255, 255);
@@ -85,8 +86,8 @@ main h1 {
 }
 
 #inputDelId {
-  width: 100px;
-  margin: 0 auto;
+  width: 15%;
+  padding: 0.5rem;
   text-align: left;
   gap: 1rem;
   border: 3px solid #fc7373;
@@ -98,8 +99,8 @@ main h1 {
 }
 
 #delCarId {
-  width: 400px;
-  padding: 0.5rem 1rem;
+  width: 80%;
+  padding: 0.5rem 0;
   background-color: #464646e1;
   color: rgb(255, 255, 255);
   border: none;
@@ -119,5 +120,13 @@ main h1 {
   &:focus {
     outline: none;
     border: 2px solid #0c1cff;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .btns-form {
+    gap: 1rem;
+    align-items: start;
+    flex-direction: column;
   }
 }
