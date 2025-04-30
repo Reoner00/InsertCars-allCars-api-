@@ -23,7 +23,7 @@ const buildCards = (data) => {
 
     const price = document.createElement("p");
     price.textContent = car.price;
-    price.classList.add("description");
+
     card.append(title, imagUrl, description, price, id);
 
     carsWrapper.append(card);
